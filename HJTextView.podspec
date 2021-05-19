@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HJTextView'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = '带动画、标题、错误提示的输入框'
 
 # This description is used to generate tags and improve search results.
