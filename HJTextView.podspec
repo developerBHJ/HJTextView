@@ -41,7 +41,7 @@ TODO: Add long description of the pod here.
   s.swift_versions = '5.0'
   
   s.subspec 'Common' do |cc|
-      cc.source_files = 'HJTextView/Classes/Common/**/*{.swift}'
+      cc.source_files = 'Common/**/*{.swift}'
   end
   
 end
