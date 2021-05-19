@@ -1,0 +1,6 @@
+framework module HJTextView {
+  umbrella header "HJTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}
