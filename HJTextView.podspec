@@ -39,9 +39,10 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
 
   s.swift_versions = '5.0'
+  s.source_files = 'HJTextView/Classes/**/*{.swift}'
   
   s.subspec 'Common' do |cc|
-      cc.source_files = 'Common/**/*{.swift}'
+      cc.source_files = 'HJTextView/Classes/Common/**/*{.swift}'
   end
   
 end
