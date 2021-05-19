@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HJTextView (0.1.0)
+  - HJTextView (0.0.1):
+    - HJTextView/Common (= 0.0.1)
+  - HJTextView/Common (0.0.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HJTextView: 9f5f74159db990539b7da7aeb49fc5ae6018ec6a
+  HJTextView: 41fb02454602606a716aad157105e2111ca81f7a
 
 PODFILE CHECKSUM: 1d9dde51d6466e019579fe63fc0b21db6fbff649
 

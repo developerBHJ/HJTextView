@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HJTextView'
   s.version          = '0.0.1'
-  s.summary          = 'A short description of HJTextView.'
+  s.summary          = '带动画、标题、错误提示的输入框'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,8 +29,6 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'HJTextView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'HJTextView' => ['HJTextView/Assets/*.png']
@@ -40,5 +38,10 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
+  s.swift_versions = '5.0'
+  
+  s.subspec 'Common' do |cc|
+      cc.source_files = 'HJTextView/Classes/Common/**/*{.swift}'
+  end
   
 end
