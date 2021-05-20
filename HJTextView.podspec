@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HJTextView'
-  s.version          = '0.0.4'
+  s.version          = '1.0.0'
   s.summary          = '带动画、标题、错误提示的输入框'
 
 # This description is used to generate tags and improve search results.
@@ -38,11 +38,8 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  s.swift_versions = '5.0'
-  s.source_files = 'HJTextView/Classes/**/*{.swift}'
+  s.swift_version = '5.0'
+  s.source_files = 'HJTextView/Classes/**/*'
   
-  s.subspec 'Common' do |cc|
-      cc.source_files = 'HJTextView/Classes/Common/**/*{.swift}'
-  end
   
 end

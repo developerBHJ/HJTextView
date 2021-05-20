@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +19,82 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdl-C5-UxF" customClass="HJTextField" customModule="HJTextView">
+                                <rect key="frame" x="40" y="115" width="295" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1TJ-BC-siG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleFromPlaceHolder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-Xa-Sgf">
+                                <rect key="frame" x="40" y="280" width="295" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="登陆">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginEvent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ica-4J-1h8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7cA-RO-6hm" customClass="HJTextField" customModule="HJTextView">
+                                <rect key="frame" x="40" y="195" width="295" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7cA-RO-6hm" firstAttribute="leading" secondItem="wdl-C5-UxF" secondAttribute="leading" id="7OR-Et-Cdd"/>
+                            <constraint firstAttribute="trailing" secondItem="wdl-C5-UxF" secondAttribute="trailing" constant="40" id="DzY-hf-qKu"/>
+                            <constraint firstItem="xSB-Xa-Sgf" firstAttribute="top" secondItem="7cA-RO-6hm" secondAttribute="bottom" constant="25" id="MS4-oG-11Z"/>
+                            <constraint firstItem="xSB-Xa-Sgf" firstAttribute="leading" secondItem="7cA-RO-6hm" secondAttribute="leading" id="Mcb-bC-ZEu"/>
+                            <constraint firstItem="7cA-RO-6hm" firstAttribute="height" secondItem="wdl-C5-UxF" secondAttribute="height" id="Myp-XJ-iXl"/>
+                            <constraint firstItem="wdl-C5-UxF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="115" id="QwE-po-dQY"/>
+                            <constraint firstItem="xSB-Xa-Sgf" firstAttribute="trailing" secondItem="7cA-RO-6hm" secondAttribute="trailing" id="U7M-lr-Dod"/>
+                            <constraint firstItem="xSB-Xa-Sgf" firstAttribute="height" secondItem="7cA-RO-6hm" secondAttribute="height" id="YrA-sC-U5M"/>
+                            <constraint firstItem="wdl-C5-UxF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="bZN-5Q-rVo"/>
+                            <constraint firstItem="7cA-RO-6hm" firstAttribute="top" secondItem="wdl-C5-UxF" secondAttribute="bottom" constant="20" id="vTf-y5-H6u"/>
+                            <constraint firstItem="7cA-RO-6hm" firstAttribute="trailing" secondItem="wdl-C5-UxF" secondAttribute="trailing" id="wCG-PZ-LlY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accountTF" destination="wdl-C5-UxF" id="vYC-q7-JTk"/>
+                        <outlet property="pwdTF" destination="7cA-RO-6hm" id="hoz-DP-jx8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="93.103448275862078"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="7cA-RO-6hm">
+            <size key="intrinsicContentSize" width="71.5" height="18.5"/>
+        </designable>
+        <designable name="wdl-C5-UxF">
+            <size key="intrinsicContentSize" width="86" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
